@@ -1,0 +1,40 @@
+*{
+    background-color:#000100 ;
+    color: aliceblue;
+    box-sizing: border-box;
+}
+
+h1{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 12%;
+    font-size: 50px;
+}
+
+.form{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+input{
+    padding: 5px;
+    margin: 1px;
+    width: 30%;
+    font-size: 20px;
+    border-radius: 5px;
+}
+
+button{
+    padding: 5px;
+    margin: 1px;
+    width: 30%;
+    font-size: 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    background-color: aliceblue;
+    color: black;
+    font-weight: bold;
+}
