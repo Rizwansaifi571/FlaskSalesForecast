@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sales Forecasting</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css')}}">
+</head>
+<body>
+    <div class="heading-container">
+        <h1>Sales Forecasting</h1>
+    </div>
+    <div class="form-container">
+        <form action="{{ url_for('predict')}}" method="post" class="form">
+            <input type="text" placeholder="rate" id="rate" name="rate" required="required">
+            <br>
+            <input type="text" placeholder="Sales in first month" id="sales_in_first_month" name="sales_in_first_month" required="required">
+            <br>
+            <input type="text" placeholder="Sales in second month" id="sales_in_second_month" name="sales_in_second_month" required="required">
+            <br>
+            <button>Predict Sales in third month</button>
+
+            <br>
+            {{ prediction_text }}
+        </form>
+    </div>
+</body>
+</html>
